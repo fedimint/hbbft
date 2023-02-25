@@ -112,7 +112,7 @@ where
     let mut sizes = vec![last_size];
     let num_sizes = (GOOD_SAMPLE_SET.log2() - (num_samples as f64).log2()) as usize;
     for _ in 0..num_sizes {
-        last_size += rng.gen_range(3, 7);
+        last_size += rng.gen_range(3..7);
         sizes.push(last_size);
     }
 
@@ -158,19 +158,19 @@ proptest! {
 
     #[test]
     fn test_coin_random_silent_200_samples(seed in gen_seed()) {
-        let new_adversary = || ReorderingAdversary::new();
+        let new_adversary = ReorderingAdversary::new;
         test_coin_different_sizes(new_adversary, 200, seed);
     }
 
     #[test]
     fn test_coin_first_silent_50_samples(seed in gen_seed()) {
-        let new_adversary = || NodeOrderAdversary::new();
+        let new_adversary = NodeOrderAdversary::new;
         test_coin_different_sizes(new_adversary, 50, seed);
     }
 
     #[test]
     fn test_threshold_sign(seed in gen_seed()) {
-        let new_adversary = || ReorderingAdversary::new();
+        let new_adversary = ReorderingAdversary::new;
         test_threshold_sign_different_sizes(new_adversary, seed);
     }
 }

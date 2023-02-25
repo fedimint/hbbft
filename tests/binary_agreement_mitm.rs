@@ -233,7 +233,7 @@ struct AbaCommonCoinAdversary {
 }
 
 const NODES_PER_GROUP: usize = 2;
-const NUM_NODES: usize = (NODES_PER_GROUP * 3 + 1);
+const NUM_NODES: usize = NODES_PER_GROUP * 3 + 1;
 
 impl AbaCommonCoinAdversary {
     fn new<R: Rng>(
@@ -385,7 +385,7 @@ impl Adversary<Algo> for AbaCommonCoinAdversary {
         });
         let mut redo_crank = false;
         if let Some(msg) = net.get_messages().front() {
-            if msg.payload().epoch == self.epoch && self.stage_matches_msg(&msg) {
+            if msg.payload().epoch == self.epoch && self.stage_matches_msg(msg) {
                 self.stage_progress += 1;
                 self.on_stage_progress_update();
             }
