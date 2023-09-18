@@ -1,6 +1,8 @@
 #![deny(unused_must_use)]
 //! Tests the BinaryAgreement protocol with a MTIM adversary.
 
+use fedimint_hbbft as hbbft;
+
 use std::iter;
 use std::sync::{Arc, Mutex};
 

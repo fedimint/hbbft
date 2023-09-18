@@ -4,6 +4,8 @@
 use std::io;
 use std::net::TcpStream;
 
+use fedimint_hbbft as hbbft;
+
 use bincode;
 use crossbeam;
 use crossbeam_channel::{Receiver, Sender};

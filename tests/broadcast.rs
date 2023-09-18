@@ -1,5 +1,7 @@
 use std::iter::once;
 
+use fedimint_hbbft as hbbft;
+
 use hbbft::{broadcast::Broadcast, util, ConsensusProtocol, CpStep};
 use hbbft_testing::adversary::{
     sort_ascending, swap_random, Adversary, NetMutHandle, NodeOrderAdversary, RandomAdversary,

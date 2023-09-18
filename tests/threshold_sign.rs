@@ -1,6 +1,8 @@
 #![deny(unused_must_use)]
 //! Non-deterministic tests for the ThresholdSign protocol
 
+use fedimint_hbbft as hbbft;
+
 use std::sync::Arc;
 
 use hbbft::{threshold_sign::ThresholdSign, util, ConsensusProtocol};

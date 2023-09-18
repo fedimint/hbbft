@@ -1,3 +1,5 @@
+use fedimint_hbbft as hbbft;
+
 use std::collections::{BTreeMap, VecDeque};
 use std::time::{Duration, Instant};
 use std::{cmp, u64};

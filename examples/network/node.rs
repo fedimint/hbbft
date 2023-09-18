@@ -29,6 +29,8 @@
 //! the consensus `result` is not an error then every successfully terminated
 //! consensus node will be the same `result`.
 
+use fedimint_hbbft as hbbft;
+
 use std::collections::HashSet;
 use std::fmt::Debug;
 use std::marker::{Send, Sync};

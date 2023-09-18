@@ -1,4 +1,6 @@
 //! The local message delivery system.
+use fedimint_hbbft as hbbft;
+
 use crossbeam::thread::{Scope, ScopedJoinHandle};
 use crossbeam_channel::{self, bounded, select, unbounded, Receiver, Sender};
 use hbbft::{SourcedMessage, Target, TargetedMessage};

@@ -1,5 +1,7 @@
 #![deny(unused_must_use)]
 
+use fedimint_hbbft as hbbft;
+
 use std::collections::{BTreeMap, BTreeSet};
 use std::iter::once;
 use std::sync::Arc;

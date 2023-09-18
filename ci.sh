@@ -18,7 +18,7 @@ cargo fmt -- --check
 
 cargo test --release
 cargo doc
-cargo deadlinks --dir target/doc/hbbft/
+cargo deadlinks --dir target/doc/fedimint_hbbft/
 cargo audit
 
 cd hbbft_testing

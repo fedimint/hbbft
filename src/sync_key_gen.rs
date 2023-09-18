@@ -56,6 +56,7 @@
 //! ## Example
 //!
 //! ```
+//! # use fedimint_hbbft as hbbft;
 //! use std::collections::BTreeMap;
 //! use std::sync::Arc;
 //!
