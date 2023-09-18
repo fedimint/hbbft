@@ -1,6 +1,6 @@
 [package]
-name = "hbbft"
-version = "0.1.1"
+name = "fedimint-hbbft"
+version = "0.1.0"
 authors = [
     "Vladimir Komendantskiy <komendantsky@gmail.com>",
     "Andreas Fackler <AndreasFackler@gmx.de>",
@@ -14,7 +14,7 @@ keywords = ["consensus", "asynchronous", "threshold"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/poanetwork/hbbft"
-description = "The Honey Badger of Byzantine Fault Tolerant Consensus Protocols"
+description = "The Honey Badger of Byzantine Fault Tolerant Consensus Protocols (Fedimint fork)"
 edition = "2018"
 
 [badges]
@@ -36,7 +36,7 @@ rand_derive = "0.5.0"
 reed-solomon-erasure = "5.0.3"
 serde = { version = "1.0.137", features = ["derive", "rc"] }
 thiserror = "1.0.31"
-threshold_crypto = { git = "https://github.com/fedimint/threshold_crypto" }
+threshold_crypto = { package = "fedimint-threshold-crypto", version = "0.1" }
 tiny-keccak = { version = "2.0.2", features = ["sha3"] }
 
 [dev-dependencies]
