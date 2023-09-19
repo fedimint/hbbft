@@ -13,6 +13,8 @@
 //! - Validity: If any correct node outputs `b`, then at least one correct node received `b` as
 //! input.
 
+use fedimint_hbbft as hbbft;
+
 use std::iter::once;
 use std::sync::Arc;
 use std::time;

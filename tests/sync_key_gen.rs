@@ -1,6 +1,8 @@
 #![deny(unused_must_use)]
 //! Tests for synchronous distributed key generation.
 
+use fedimint_hbbft as hbbft;
+
 use std::collections::BTreeMap;
 
 use hbbft::crypto::SecretKey;

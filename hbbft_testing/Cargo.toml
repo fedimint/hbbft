@@ -1,5 +1,5 @@
 [package]
-name = "hbbft_testing"
+name = "fedimint-hbbft-testing"
 version = "0.1.0"
 authors = [
     "Vladimir Komendantskiy <komendantsky@gmail.com>",
@@ -22,10 +22,10 @@ edition = "2018"
 travis-ci = { repository = "poanetwork/hbbft" }
 
 [dependencies]
-hbbft = { path = ".." }
+hbbft = { path = "..", package = "fedimint-hbbft" }
 integer-sqrt = "0.1.2"
 proptest = "1.0.0"
 rand = "0.8.5"
 rand_xorshift = "0.3.0"
 thiserror = "1.0.31"
-threshold_crypto = { git = "https://github.com/fedimint/threshold_crypto" }
+threshold_crypto = { package = "fedimint-threshold-crypto", version = "0.1" }

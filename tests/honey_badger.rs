@@ -1,6 +1,8 @@
 #![deny(unused_must_use)]
 //! Network tests for Honey Badger.
 
+use fedimint_hbbft as hbbft;
+
 use std::collections::BTreeMap;
 use std::sync::{Arc, Mutex};
 

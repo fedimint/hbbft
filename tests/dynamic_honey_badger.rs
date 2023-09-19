@@ -1,3 +1,5 @@
+use fedimint_hbbft as hbbft;
+
 use std::collections::{BTreeMap, BTreeSet};
 use std::sync::Arc;
 use std::time;

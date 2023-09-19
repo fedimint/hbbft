@@ -138,6 +138,7 @@
 //! node, and that it did so exactly once.
 //!
 //! ```
+//! # use fedimint_hbbft as hbbft;
 //! use hbbft::broadcast::{Broadcast, Error, Step};
 //! use hbbft::{ValidatorSet, SourcedMessage, Target, TargetedMessage};
 //! use rand::{rngs::OsRng, Rng, RngCore};
